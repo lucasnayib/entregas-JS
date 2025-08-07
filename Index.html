@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Carrito Simple</title>
+    <title>Mi E-commerce</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 <header>
-    <h1>Mi Tienda</h1>
+    <h1>Tienda Online</h1>
+    <nav>
+        <button id="viewCartBtn">Ver Carrito (<span id="cartCount">0</span>)</button>
+    </nav>
 </header>
 
-<main>
-    <section id="productos-disponibles">
-        <h2>Productos</h2>
-    </section>
-
-    <section id="seccion-carrito">
-        <h2>Mi Carrito</h2>
-        <div id="lista-carrito">
-            <p id="mensaje-vacio">El carrito está vacío.</p>
-        </div>
-        <p>Total a pagar: $<span id="total-a-pagar">0.00</span></p>
-        <button id="btn-vaciar">Vaciar Carrito</button>
-        <button id="btn-comprar">Comprar Ahora</button>
-        <div id="area-mensajes"></div>
-    </section>
+<main id="productContainer">
+    <!-- Los productos se cargarán aquí dinámicamente desde JavaScript -->
 </main>
 
-<footer>
-    <p>Derechos Reservados 2023</p>
-</footer>
+<section id="cartModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Tu Carrito de Compras</h2>
+        <div id="cartItems">
+            <!-- Los ítems del carrito se cargarán aquí -->
+        </div>
+        <p>Total: $<span id="cartTotal">0.00</span></p>
+        <button id="checkoutBtn">Finalizar Compra</button>
+        <button id="clearCartBtn">Vaciar Carrito</button>
+    </div>
+</section>
 
 <script src="main.js"></script>
 </body>

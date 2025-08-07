@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop Gamer",
+    "price": 1200.00,
+    "image": "imagenes/laptop.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Teclado Mecánico",
+    "price": 85.50,
+    "image": "imagenes/teclado.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mouse Inalámbrico",
+    "price": 30.00,
+    "image": "imagenes/mouse.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Monitor Curvo 27''",
+    "price": 350.00,
+    "image": "imagenes/monitor.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Auriculares Gaming",
+    "price": 75.00,
+    "image": "imagenes/auriculares.webp"
+  }
+]
